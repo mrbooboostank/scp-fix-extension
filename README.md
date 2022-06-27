@@ -1,6 +1,10 @@
 # SCP Wiki Remove Gay Logo Extension
 The "SCP Wiki Remove Gay Logo" Chromium extension allows for the customization of logos, titles, and subtitles on the SCP Wiki. By default, it removes many (hopefully all) occurences of leftist politics from the website's iconography. Reclaim your immersion!
 
+[YouTube Launch Trailer](https://youtu.be/i38tk5X3Kk0)
+
+[BitChute Launch Trailer](https://www.bitchute.com/video/dVD6bW99AlLo/)
+
 ## Installation
 ### For Windows/Mac or Linux:
 1. Download the [latest zip release,](https://github.com/mrbooboostank/scp-fix-extension/releases/download/1.0.0/scpFixExtension1.0.0.zip) or select a version in [Releases](https://github.com/mrbooboostank/scp-fix-extension/releases) and download its zip file
