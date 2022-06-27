@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://scp-wiki.wdfiles.com/local--files/component%3Atheme/font-bauhaus.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+
+html {min-width: 360px;}
+
+body {background-image: url("https://scp-wiki.wdfiles.com/local--files/component:theme/body_bg.png"); background-repeat:repeat-x; font-family: sans-serif; font-size: .8em; color: #333;}
+
+.logo {display:block; margin-left:auto; margin-right:auto; width:30%;}
+
+.title {font-family:BauhausLTDemi, 'Nanum Gothic', Arial, sans-serif; text-align:center; margin-top:0px; margin-bottom: 10px; color:#eee; text-shadow:3px 3px 5px #000;     letter-spacing: .9px}
+
+.link {font-weight: bold; text-align:center; padding: 0px 25px; word-wrap: normal; display: inline-block}
+
+.optionsTitle { color: #901; font-weight: normal; font-size: 170%; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #bbb; padding-bottom: 0.25em}
+
+.status {
+	background-image: linear-gradient(#613a3a, #201313);
+    font-weight: bold;
+    color: #f0f0c0;
+	font-size: 105%;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 80%);
+}
+
+button { 
+	border: solid 1px #999;
+	border-top-color: rgb(153, 153, 153);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-color: rgb(153, 153, 153);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-color: rgb(153, 153, 153);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: rgb(153, 153, 153);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	display: inline-block;
+	padding: 2px 5px;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	font-size: 90%;
+	font-weight: bold;
+	color: #ccc;
+	background-color: #633;
+	background-image: linear-gradient(to bottom, #966, #633, #300);
+	box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+	cursor: pointer;
+}
+
+button:hover { 
+	border: solid 1px #fff;
+	border-top-color: rgb(255, 255, 255);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-color: rgb(255, 255, 255);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-color: rgb(255, 255, 255);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: rgb(255, 255, 255);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	color: #fff;
+	text-shadow: 0 0 1px rgb(255 255 255 / 25%);
+	background-color: #966;
+	background-image: linear-gradient(to bottom, #c99, #966, #633);
+	box-shadow: 0 1px 3px rgb(0 0 0 / 80%);
+}
+
+button:focus { 
+	border: solid 1px #fff;
+	border-top-color: rgb(255, 255, 255);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-color: rgb(255, 255, 255);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-color: rgb(255, 255, 255);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: rgb(255, 255, 255);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	color: #fff;
+	text-shadow: 0 0 1px rgb(255 255 255 / 25%);
+	background-color: #966;
+	background-image: linear-gradient(to bottom, #c99, #966, #633);
+	box-shadow: 0 1px 3px rgb(0 0 0 / 80%);
+}
+
+button:focus-visible { 
+	border: solid 1px #fff;
+	border-top-color: rgb(255, 255, 255);
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-right-color: rgb(255, 255, 255);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-bottom-color: rgb(255, 255, 255);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: rgb(255, 255, 255);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	color: #fff;
+	text-shadow: 0 0 1px rgb(255 255 255 / 25%);
+	background-color: #966;
+	background-image: linear-gradient(to bottom, #c99, #966, #633);
+	box-shadow: 0 1px 3px rgb(0 0 0 / 80%);
+}
+
+.urlInput {
+	margin-right: 10;
+}    
+    
+label{
+	cursor: pointer;
+	display: inline-block;
+	padding: 3px 6px;
+	text-align: right;
+	width: 125px;
+	vertical-align: top;
+	}
+
+a{ 
+ text-decoration: none; 
+ color: white; 
+}
+
+a:hover { 
+ color: #a01; 
+}
+
+li, p {
+    line-height: 141%;
+}
+
+</style>
+</head>
+
+<img src="customLogo.png" alt="SCP Logo" class=logo>
+<h2 class=title>SCP Wiki Remove Gay Logo 1.0.0</h2>
+<body>
+
+<div style="text-align:center">
+<a href="https://github.com/mrbooboostank/scp-fix-extension" target="_blank" class=link>GitHub</a>
+<a href="https://youtu.be/i38tk5X3Kk0" target="_blank" class=link>YouTube</a>
+<a href="https://www.bitchute.com/video/dVD6bW99AlLo/" target="_blank" class=link>BitChute</a>
+</div>
+
+<h3 class=optionsTitle>SCP-716589</h3>
+
+<p><strong>Item #: </strong>SCP-716589</p>
+<p><strong>Object Class: </strong>Euclid</p>
+
+<p><strong>Special Containment Procedures:</strong></p>
+
+<div style="margin-bottom: 8px">
+<label for="regionBox">
+<strong>Region: </strong>
+</label>
+<select id="regionBox">
+</select>
+
+<label for="themeBox">
+<strong class=>Theme: </strong>
+</label>
+<select id="themeBox">
+</select>
+
+<label for="logoBox">
+<strong class=>New Logo URL: </strong>
+</label>
+<input type="text" class=urlInput id="logoBox">
+
+<label for="titleBox">
+<strong class=>New Title: </strong>
+</label>
+<input type="text" class=urlInput id="titleBox">
+
+<label for="subtitleBox">
+<strong class=>New Subtitle: </strong>
+</label>
+<input type="text" class=urlInput id="subtitleBox">
+
+</div>
+
+<div style="text-align: center">
+<div id="status" class="status" style="margin-bottom: 10px"></div>
+
+<div id="buttons">
+<button id="save" class=button>Save</button>
+<button id="load" class=button>Load Defaults</button>
+<button id="loadAndSave" class=button>Load Defaults & Save</button>
+</div>
+</div>
+
+
+<p><strong>Description: </strong>SCP-716589 is a set of memetic images in the Foundation's database, with appearances typically corresponding with the month of June on the Gregorian calendar. SCP-716589 manifests by replacing Foundation iconography on SCP entries with itself, in ways that seemingly aim to maximize distraction and controversy among viewers. SCP-716589 appearances have been recorded from Foundation networks hosted in North America, France, Poland, and Vietnam.</p>
+
+<p>When attempting to delete or overwrite an SCP-716589 image file, the instance will alter its file path as to render the operation invalid. No upper limit has been observed on the quantity of folder structure modifications an SCP-716589 instance can perform. If the digital storage medium housing an SCP-716589 instance is connected to the central Foundation network, the file will distribute itself evenly in regards to the inhabited directories of other SCP-716589 instances. This behavior, combined with the █667 identified instances of SCP-716589, make containment of SCP-716589 at the hardware level ineffective without a significant loss of data for the containment procedures of other anomalies.</p>
+
+<p>SCP-716589's primary anomalous effects emerge when viewed on an SCP entry by a member of Foundation personnel. Subjects will display increased verbal combativeness, impaired cognitive function, and an overwhelming desire to forcibly expose nearby personnel to an SCP entry affected by SCP-716589. The effects subside once the subject hasn't viewed an SCP-716589 instance for no less than 30 minutes, with subjects lacking a Cognitive Resistance Value of at least 6.0 taking as long as an hour. Instances of SCP-716589 viewed separately from an SCP entry fail to produce SCP-716589's effects. Subjects have reported lone instances as being "weird" and "unfitting", though displayed difficulty elaborating. Following input by Jr. Researcher █████, this response is to be considered non-anomalous.</p>
+
+<p>Given the group's anart capabilities, an investigation into GoI ████████████████ for their possible deployment of SCP-716589 as a targeted attack against the Foundation is pending approval.</p>
+
+
+
+<script src="options.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+{
+	"name": "SCP Wiki Remove Gay Logo",
+	"description": "Allows customization of logos, titles, and subtitles on the SCP Wiki",
+	"version": "1.0.0",
+	"version_name": "1.0.0",
+	"manifest_version": 3,
+	"web_accessible_resources": [
+		{
+			"resources": ["custom43Head.png", "customLogo.png"],
+			"matches" : ["<all_urls>"] 
+		}
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://scp-wiki.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://05command.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-int.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-ru.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://ko.scp-wiki.net/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-wiki-cn.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://fondationscp.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-wiki.net.pl/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://lafundacionscp.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-th.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-jp.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-wiki-de.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://fondazionescp.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-ukrainian.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-pt-br.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-cs.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-zh-tr.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-vn.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://scp-un.wikidot.com/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		}
+	],  
+	"permissions": [
+		"storage"
+	],
+	"action": {
+		"default_popup": "options.html",
+		"default_icon": "customLogo.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+  "icons": {
+		"16": "customLogo16.png",
+		"48": "customLogo48.png",
+		"128": "customLogo128.png" 
+	}
+}
