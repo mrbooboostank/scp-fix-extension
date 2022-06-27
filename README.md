@@ -11,7 +11,7 @@ The "SCP Wiki Remove Gay Logo" Chromium extension allows for the customization o
 6. Enter the unzipped folder and click "Select Folder"
 
 ### For Linux only:
-1. Download the latest [crx release,](https://github.com/mrbooboostank/scp-fix-extension/releases/download/1.0.0/scpFixExtension1.0.0.crx) or select a version in [Releases](https://github.com/mrbooboostank/scp-fix-extension/releases) and download its crx file
+1. Download the [latest crx release,](https://github.com/mrbooboostank/scp-fix-extension/releases/download/1.0.0/scpFixExtension1.0.0.crx) or select a version in [Releases](https://github.com/mrbooboostank/scp-fix-extension/releases) and download its crx file
 2. Go to chrome://extensions or your browser's equivalent page
 2. Enable "Developer mode" at the top right
 3. Refresh the page
